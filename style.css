@@ -1,1 +1,69 @@
-/* Add styles here */
+:root {
+  --background-color: #f0f0f0;
+  --container-background: #ffffff;
+  --button-background: #4caf50;
+  --button-text-color: #ffffff;
+  --text-color: #333333;
+  --ball-color: #ffeb3b;
+}
+
+body {
+  background-color: var(--background-color);
+  font-family: sans-serif;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  min-height: 100vh;
+  margin: 0;
+  background-image: subtle-noise.png
+}
+
+.container {
+  background-color: var(--container-background);
+  padding: 2rem;
+  border-radius: 1rem;
+  box-shadow: 0 10px 20px rgba(0, 0, 0, 0.1), 0 6px 6px rgba(0, 0, 0, 0.1);
+  text-align: center;
+}
+
+h1 {
+  color: var(--text-color);
+  margin-bottom: 2rem;
+}
+
+.numbers-container {
+  display: flex;
+  justify-content: center;
+  gap: 1rem;
+  margin-bottom: 2rem;
+}
+
+#generate-button {
+  background-color: var(--button-background);
+  color: var(--button-text-color);
+  border: none;
+  padding: 1rem 2rem;
+  font-size: 1rem;
+  border-radius: 0.5rem;
+  cursor: pointer;
+  transition: background-color 0.3s ease;
+  box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+}
+
+#generate-button:hover {
+  background-color: #45a049;
+}
+
+lottery-ball {
+  display: inline-block;
+  width: 50px;
+  height: 50px;
+  border-radius: 50%;
+  background-color: var(--ball-color);
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  font-size: 1.5rem;
+  font-weight: bold;
+  box-shadow: 0 2px 4px rgba(0,0,0,0.2);
+}
